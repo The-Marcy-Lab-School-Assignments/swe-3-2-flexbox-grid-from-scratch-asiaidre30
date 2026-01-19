@@ -1,19 +1,114 @@
-/* -------------------------------- */
-/* ---------- CSS Reset ----------- */
-/* -------------------------------- */
-
-* {
+{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-ul {
-  list-style: none;
+/* BASE */
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-img {
+/* TOP NAV */
+.top-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+  background-color: #000;
+}
+
+.logo {
+  width: 30px;
+  height: 30px;
+}
+
+.site-title {
+  color: #1db954;
+  font-size: 1.5rem;
+}
+
+.nav-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.nav-links a:hover {
+  color: #1db954;
+}
+
+/* MAIN CONTENT */
+.content {
+  padding: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* SECTION HEADERS */
+section h2 {
+  margin-bottom: 20px;
+  color: #1db954;
+}
+
+/* PLAYLIST GRID */
+.playlist-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.playlist-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: #1e1e1e;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.playlist-card img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+/* ALBUM GRID */
+.album-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.album-card {
+  background-color: #1e1e1e;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.album-card img {
   width: 100%;
+  border-radius: 4px;
+  margin-bottom: 10px;
 }
 
-/* Add your styles below */
+.album-title {
+  font-weight: bold;
+}
+
+.album-artist {
+  color: #b3b3b3;
+  font-size: 0.9rem;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #1db954;
+}
+
+
